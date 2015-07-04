@@ -35,4 +35,15 @@
     self.label.text=result;
     [self.viewTweetBody resignFirstResponder];
 }
+- (void) mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
+    MKCoordinateRegion region= MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800,800);
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+
+    //Add an annotation
+    MKPointAnnotation *point=[[MKPointAnnotation alloc]init];
+    point.coordinate= userLocation.coordinate;
+    point.title=@"Donde estoy?";
+point.title=@"Estoy aqui!!";
+    [self.mapView addAnnotation:point];
+}
 @end

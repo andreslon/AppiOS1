@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93538B9F1B47A1C800FBBCFD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93538B9E1B47A1C800FBBCFD /* MapKit.framework */; };
 		93FFF0BA1B47917B00B1A45A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FFF0B91B47917B00B1A45A /* main.m */; };
 		93FFF0BD1B47917B00B1A45A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FFF0BC1B47917B00B1A45A /* AppDelegate.m */; };
 		93FFF0C01B47917B00B1A45A /* AppiOS1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93FFF0BE1B47917B00B1A45A /* AppiOS1.xcdatamodeld */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93538B9E1B47A1C800FBBCFD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		93FFF0B41B47917B00B1A45A /* AppiOS1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppiOS1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FFF0B81B47917B00B1A45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93FFF0B91B47917B00B1A45A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93538B9F1B47A1C800FBBCFD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +71,7 @@
 		93FFF0AB1B47917B00B1A45A = {
 			isa = PBXGroup;
 			children = (
+				93538B9E1B47A1C800FBBCFD /* MapKit.framework */,
 				93FFF0B61B47917B00B1A45A /* AppiOS1 */,
 				93FFF0D31B47917B00B1A45A /* AppiOS1Tests */,
 				93FFF0B51B47917B00B1A45A /* Products */,
@@ -176,6 +180,11 @@
 				TargetAttributes = {
 					93FFF0B31B47917B00B1A45A = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					93FFF0CF1B47917B00B1A45A = {
 						CreatedOnToolsVersion = 6.4;
@@ -428,6 +437,7 @@
 				93FFF0DC1B47917B00B1A45A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93FFF0DD1B47917B00B1A45A /* Build configuration list for PBXNativeTarget "AppiOS1Tests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +446,7 @@
 				93FFF0DF1B47917B00B1A45A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
